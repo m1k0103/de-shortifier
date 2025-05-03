@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "De-Shortify",
+    "version": "1.0",
+  
+    "description": "Removes all short form videos from Youtube.",
+  
+    "icons": {
+      "48": "icons/rock.jpg"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["de-shortify.js"]
+      }
+    ]
+  }
+  
